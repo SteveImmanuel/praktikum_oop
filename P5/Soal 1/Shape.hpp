@@ -1,0 +1,19 @@
+// Shape.hpp
+
+#ifndef SHAPE_HPP
+#define SHAPE_HPP
+#include <cmath>
+
+class Shape {
+  public:
+    // dtor
+    // print "SHAPE DELETED<endl>"
+    virtual ~Shape();
+
+     // method yang belum diimplementasi, pure virtual
+    virtual float area()=0;
+    virtual float perimeter()=0;
+    virtual void print()=0;
+};
+
+#endif
